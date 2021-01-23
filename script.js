@@ -22,3 +22,7 @@ function runQuery(numArticles, queryURL) {
         articleCounter++;
     }
 }
+
+$("#search-term")
+$("#records-number")
+$("#start-year")

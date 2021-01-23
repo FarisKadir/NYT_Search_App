@@ -20,29 +20,29 @@
             <form>
                 <div class="form-group">
                 <div class=" mb-3">
-                    <label for="validationDefault01">Search Term</label>
-                    <input type="text" class="form-control" id="validationDefault01" required>
+                    <label for="search-term">Search Term</label>
+                    <input type="text" class="form-control" id="search-term" name="search-term" required>
                 </div>
                 <div class=" mb-3">
-                    <label for="validationDefault02">Number of Records to Retrieve:</label>
-                    <input type="text" class="form-control" id="validationDefault02" required>
+                    <label for="records-number">Number of Records to Retrieve:</label>
+                    <input type="number" class="form-control" max="25" min="1" id="records-number" name="records-number" required />
                 </div>
-                <div class=" mb-3">
-                    <label for="startyear">Start Year (Optional):</label>
+                <div class="mb-3">
+                    <label for="start-year">Start Year (Optional):</label>
                     </div>
-                    <input type="text" class="form-control" id="start-year">
+                    <input type="number" max="2021" min="1950" class="form-control" id="start-year" name="start-year">
                     </div>
-                    <div class=" mb-3">
+                    <div class="mb-3">
                         <label for="end-year">End Year (Optional):</label>
                         </div>
-                        <input type="text" class="form-control" id="end-year">
+                        <input type="number" class="form-control" max="2021" min="1950" id="end-year" name="end-year">
                         </div> 
                 </div>
                 </div>
                 </div>
                 <div class="form-group">
-                    <button class="btn btn-primary m-4" type="submit"><i class="fas fa-search"></i>Search</button>
-                    <button class="btn btn-primary" type="submit"><i class="fas fa-trash"></i>
+                    <button class="btn btn-primary m-4" id="search-btn"><i class="fas fa-search"></i>Search</button>
+                    <button class="btn btn-primary" id="submit-btn"><i class="fas fa-trash"></i>
                     </button>
                 </div>
             </form>
@@ -53,10 +53,10 @@
                 Top Articles
             </div>
             <div class="card-body">
-            <p class="card-text">Articles dynamically appended  here</p>
+            <p class="card-text" id="top-articles">Articles dynamically appended  here
+            </p>
             </div>
         </div>
-
 </body>
 </html>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
