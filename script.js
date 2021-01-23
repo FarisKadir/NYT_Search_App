@@ -1,12 +1,11 @@
-var searchTerm = "";
-var numResults = 0;
-var startYear = 0;
-var endYear = 0;
+var searchTerm = $("#search-term").val();
+var recordsNumber = $("#records-number").val();
+var startYear = $("#start-year").val();
+var endYear = $("#end-year").val();
 
 var queryURL = "https://api.nytimes.com/svc/search/v2/articlesearch.json?api-key=" + wAsl028zJJVulhHpago808pMPTaR2yrS + "&q=";
 
 var articleCounter = 0;
-
 
 function runQuery(numArticles, queryURL) {
     $.ajax({
@@ -23,6 +22,6 @@ function runQuery(numArticles, queryURL) {
     }
 }
 
-$("#search-term")
-$("#records-number")
-$("#start-year")
+$("#search-button")
+$("#submit-button")
+$("#top-articles")
