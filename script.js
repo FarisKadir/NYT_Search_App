@@ -14,9 +14,9 @@ function runQuery(numArticles, queryURL) {
         method: "GET"
     }).done(function(NYTData))
 
-    console.log("------------------------------------");
+    
     console.log("URL: " + queryURL);
-    console.log("------------------------------------");
+    
 
     for (var i = 0; i < numArticles; i++) {
         articleCounter++;
